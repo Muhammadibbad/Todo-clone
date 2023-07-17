@@ -36,7 +36,7 @@ const Header = ( {sendDataToParent}:any) => {
       setCookie("uid", result.user?.uid, 7);
       location.reload();
     } catch (error) {
-      console.log(error);
+      console.log({error});
     }
   };
   const [receivedData, setReceivedData] = useState('');
